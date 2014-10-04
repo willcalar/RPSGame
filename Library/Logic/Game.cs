@@ -49,7 +49,9 @@ namespace Library.Logic
             {
                 Regex replaceAllNot = new Regex(@"[^A-Za-z,\[\]\\""]");
                 playFile = replaceAllNot.Replace(playFile, "");
-                return ProcessPlays(playFile);
+                var winnerPlayer = ProcessPlays(playFile);
+                UpdateUserTable(winnerPlayer);
+                return winnerPlayer;
             }
             catch (Exception ex)
             {

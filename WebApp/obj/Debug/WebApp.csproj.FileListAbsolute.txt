@@ -3,3 +3,4 @@ c:\users\william ca\documents\visual studio 2013\Projects\RPSGame\WebApp\bin\Web
 c:\users\william ca\documents\visual studio 2013\Projects\RPSGame\WebApp\bin\WebApp.pdb
 c:\users\william ca\documents\visual studio 2013\Projects\RPSGame\WebApp\obj\Debug\WebApp.dll
 c:\users\william ca\documents\visual studio 2013\Projects\RPSGame\WebApp\obj\Debug\WebApp.pdb
+C:\Users\William CA\documents\visual studio 2013\Projects\RPSGame\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
