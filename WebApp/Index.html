@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-app="RPSGame">
+<head>
+    <title>Rock Paper Scissor Game</title>
+
+    <!--Angular-->
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+
+    <!--App angular scripts-->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/RPSGameController.js"></script>
+
+    <!-- JQuery -->
+    <script src="lib/jquery-1.9.1.min.js"></script>
+
+    <!--Bootstrap-->
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular-ui/ui-bootstrap.min.js"></script>
+    <script src="lib/angular-ui/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- Styles -->
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="container">
+        <div id="topbar">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div ng-view>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

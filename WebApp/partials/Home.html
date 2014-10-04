@@ -1,0 +1,39 @@
+﻿<div ng-controller="RPSGameController">
+    <strong><span class="glyphicon glyphicon-dashboard"></span> Home</strong>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Top Ten Champions</div>
+                <ul class="list-group">
+                    <li ng-repeat="player in champsList">
+                        {{player.Name}} with {{player.Points}} points.
+                    </li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Reset DB</div>
+                <div class="panel-body">
+                    Delete all records from the DataBase<br/>
+                    <button type="button" class="btn btn-warning" ng-click="deleteAllRecords()">Erase All</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Upload Championship</div>
+                <input type="file" on-read-file="showContent($fileContent)" />
+                <div >
+                    <h4>The Champion is:</h4>
+                    <pre>{{ content }}</pre>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Sample championships</div>
+                <div class="panel-body">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
